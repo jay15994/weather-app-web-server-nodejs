@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "nodemon src/app.js -e js,hbs",
+    "dev": "nodemon src/app.js -e js,hbs",
     "start": "node src/app.js",
     "deploy": "git push heroku master"
   },
@@ -15,5 +15,8 @@
     "express": "^4.17.1",
     "hbs": "^4.0.4",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }
