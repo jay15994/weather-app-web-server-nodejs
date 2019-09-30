@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
         callback('Unable to find location', undefined);
       } else {
         const { currently, daily } = body;
-        callback(undefined, daily.data[0].summary + ' It is currently ' + currently.temperature + ' degrees out. There is a ' + currently.precipProbability + '% chance of rain');
+        callback(undefined, daily.data[0].summary + ' It is currently ' + currently.temperature + ' degrees out. This high today is ' + daily.data[0].temperatureHigh + ' with a low of ' + daily.data[0].temperatureLow + '. There is a ' + currently.precipProbability + '% chance of rain');
       }
     }
   );
